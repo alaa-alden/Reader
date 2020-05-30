@@ -1,0 +1,31 @@
+{
+  "name": "reader",
+  "version": "1.0.0",
+  "description": "that is for read text from text, image and file",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/index.js --watch server",
+    "start": "NODE_ENV=production node server/index.js",
+    "build": "next build",
+    "deploy": "now --public",
+    "alias": "now alias",
+    "remove:deploy": "now rm next-connect"
+  },
+  "keywords": [],
+  "author": "us",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "cookies-parser": "^1.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^5.3.1",
+    "jimp": "^0.10.2",
+    "multer": "^1.4.2",
+    "next": "^9.3.1",
+    "node-tesseract-ocr": "^1.0.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
