@@ -17,7 +17,9 @@ const active_style={
     backgroundColor:"#29d",
     borderSize:"10px"
 }
-const Layout=({children})=>{
+const Layout=({children
+    // ,pageProgs:{auth}
+ })=>{
     const [Style_TextLink, setStyle_TextLink]=React.useState({})
     const [Style_ImageLink, setStyle_ImageLink] = React.useState({})
     const [Style_FileLink, setStyle_FileLink] = React.useState({})
@@ -53,8 +55,28 @@ const Layout=({children})=>{
                         <li><Link href="/text"><a style={Style_TextLink}>Text</a></Link></li>
                         <li><Link href='/image'><a style={Style_ImageLink}>Image</a></Link></li>
                         <li><Link href='/file'><a href="#" style={Style_FileLink}>File</a></Link></li>
-                        <li><Link href="#"><a href="#">About</a></Link></li>
-                        <li><a href="#">User</a></li>
+                        {/* {1 ? 
+                        // user._id ?
+                            (
+                                // auth navigation
+                                <li><Link href='/'><a href="#">Profile</a></Link></li>
+                            ):
+                            (
+                                //unauth navigation
+                                <li><Link href='/'><a href="#">Sing In</a></Link></li>
+                            )                            
+                        }
+                        {1 ? 
+                            // user._id ?
+                            (
+                                // auth navigation
+                                <li><Link href='/'><a href="#">Sign Out</a></Link></li>
+                            ):
+                            (
+                                //unauth navigation
+                                <li><Link href='/'><a href="#">Sign Up</a></Link></li>
+                            )                            
+                        } */}
                         </ul>
                 </nav>
             </header>

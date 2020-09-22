@@ -13,4 +13,15 @@ router.post('/api/process-image'
     , ImageControllers.resizeImage
     , ImageControllers.process
     )
+/**
+* AUTH ROUTES: /api/auth
+*/
+// router.post(
+//     "/api/auth/signup",
+//     authController.validateSignup,
+//     catchErrors(authController.signup)
+// );
+// router.post("/api/auth/signin", authController.signin);
+// router.get("/api/auth/signout", authController.signout);
+
 module.exports =router
