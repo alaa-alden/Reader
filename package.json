@@ -13,7 +13,7 @@
   "author": "us",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^1.13.5",
     "bcrypt": "^5.0.0",
     "classnames": "^2.2.6",
     "cookie-parser": "^1.4.5",
